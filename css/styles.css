@@ -1,3 +1,19 @@
+.violentandwild {
+  background-color: red;
+}
+
+.violentnotwild {
+  background-color: orange;
+}
+
+.nonviolentwild {
+  background-color: yellow;
+}
+
+.nonviolentnotwild {
+  background-color: green;
+}
+
 #output {
   display: none;
 }

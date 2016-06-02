@@ -24,29 +24,40 @@ $(document).ready(function() {
     wildness += extractWildness($("#kidnap").val());
     wildness += extractWildness($("#yakuza").val());
 
+  $("body").removeClass();
+
     if(violentness >= 12){
       if(wildness >= 12){
         $('#character').text('Sterling Archer');
+          $("body").addClass("violentandwild");
       } else if (wildness > -12 ){
         $('#character').text('Pam Poovey');
+          $("body").addClass("");
       } else {
         $('#character').text('Lana Kane');
+          $("body").addClass("violentnotwild");
       }
     } else if (violentness > -12){
       if(wildness >= 12){
         $('#character').text('Cheryl Tunt');
+          $("body").addClass("");
       } else if (wildness > -12){
         $('#character').text('Ron Cadillac');
+          $("body").addClass("");
       } else {
         $('#character').text('Ray Gillette');
+          $("body").addClass("");
       }
     } else {
       if(wildness >= 12){
         $('#character').text('Dr. Krieger');
+          $("body").addClass("nonviolentwild");
       } else if (wildness > -12){
         $('#character').text('Mallory Archer');
+          $("body").addClass("");
       } else {
         $('#character').text('Cyril Figgis');
+          $("body").addClass("nonviolentnotwild");
       }
     }
 
